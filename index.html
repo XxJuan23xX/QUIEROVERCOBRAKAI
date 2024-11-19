@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizador de Árbol</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Visualizador de Recorridos de Árbol</h1>
+  
+  <div class="container">
+    <div class="form">
+      <label for="tree-size">Tamaño del Árbol:</label>
+      <input type="number" id="tree-size" min="1" placeholder="Ej. 5">
+      <button id="generate-tree">Generar Árbol</button>
+      <button id="show-nary-tree">Ver Árbol N-ario Predefinido</button>
+    </div>
+    
+    <div id="tree-inputs"></div>
+<button id="build-tree">Construir Árbol</button>
+
+    
+    <div class="actions">
+      <button id="bfs">Recorrido en Amplitud</button>
+      <button id="preorder">Preorden</button>
+      <button id="inorder">Inorden</button>
+      <button id="postorder">Postorden</button>
+    </div>
+    
+    <canvas id="treeCanvas" width="800" height="400"></canvas>
+    
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
